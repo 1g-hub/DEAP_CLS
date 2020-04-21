@@ -1,7 +1,6 @@
-# DEAP_MNIST_CLS
+# DEAP_CLS
 
-Experiment for data split with GA(deap).
-For the dataset, mnist is used.
+Experiment for GA(deap) classification.
 
 ## Requirements
 - [Docker](https://www.docker.com/) >= 19.03
@@ -12,8 +11,8 @@ For the dataset, mnist is used.
 ## Installation
 ### Clone repository
 ```bash
-$ git clone https://github.com/TerauchiTonnnura/DEAP_MNIST_CLS
-$ cd DEAP_MNIST_CLS
+$ git clone https://github.com/1g-hub/DEAP_CLS
+$ cd DEAP_CLS
 ```
 
 ### Build image
@@ -26,15 +25,15 @@ If you want use GPUs, install [nvidia-drivers](https://github.com/NVIDIA/nvidia-
 
 ## How to Use
 
-<hr class="footnotes-sep">
-<section class="footnotes">
-    <ol class="footnotes-list">
-        <li id="fn1"  class="footnote-item">
-            <p>
-                It cannot handle packages which have a specific version for GPU environment like tensorflow.
-                Therefore they are installed in Dockerfiles.
-                <a href="#fnref1" class="footnote-backref">↩</a>
-            </p>
-        </li>
-    </ol>
-</section>
+### run the container
+```
+$ make bash
+```
+
+### train MNIST / cifer10
+```
+$ python train_mnist.py
+$ python train_cifer10.py
+```
+
+After training, training logs are saved in the output_path(default: output/).

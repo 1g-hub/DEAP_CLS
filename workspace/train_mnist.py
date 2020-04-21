@@ -58,7 +58,7 @@ def get_optimizer(model: torch.nn.Module, init_lr: float = 1e-3, epoch: int = 10
 def main():
     epochs = 10
     num_class = 10
-    output_path = './output/train_numpy/'
+    output_path = './output/train_mnist/'
     model = get_model(10)
     train_loader, val_loader = get_loaders(is_mini=True)
     loaders = {"train": train_loader, "valid": val_loader}
