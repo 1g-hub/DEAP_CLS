@@ -1,6 +1,6 @@
 # DEAP_CLS
 
-Experiment for GA(deap) classification.
+Experiment for classification with GA(deap).
 
 ## Requirements
 - [Docker](https://www.docker.com/) >= 19.03

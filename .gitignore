@@ -120,6 +120,8 @@ config_voc.json
 *.png
 *.jpg
 *.pth
+*.jpeg
+*.gif
 
 workspace/output
 .DS_Store

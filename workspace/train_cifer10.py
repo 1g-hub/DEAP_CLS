@@ -78,7 +78,6 @@ def get_optimizer(model: torch.nn.Module, init_lr: float = 1e-3, epoch: int = 10
 
 
 def evaluate(individual: list):
-    print(individual)
     epochs = 1
     num_class = 10
     output_path = './output/train_cifer10'
